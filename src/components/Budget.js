@@ -20,7 +20,7 @@ function Budget() {
     }
 
     return (
-        <div>
+        <div class='alert alert-info p-3 d-flex align-items-center' style={{display: 'flex', justifyContent: 'space-between'}}>
             {isEditing ? (
                 <EditBudget handleSaveClick={handleSaveClick} budget={budget}/>
             ) : (

@@ -21,8 +21,8 @@ function ExpenseList() {
 
     return (
         <>
-            <input style={{width: '50%', fontSize: '20px'}} type="text" onChange={handleChange} placeholder="Type to search"/>
-            <ul style={{width: '50%'}}>
+            <input type="text" class='form-control mb-2 mr-sm-2' onChange={handleChange} placeholder="Type to search"/>
+            <ul class="list-group">
                 {filteredExpenses.map(expense => <ExpenseItem name={expense.name} id={expense.id} cost={expense.cost}/>)}
             </ul>
         </>

@@ -9,10 +9,12 @@ function RemainingBudget() {
         return (total += item.cost)
     }, 0)
 
+    const alertType = totalExpenses > budget ? 'alert-danger' : 'alert-success'
+
     return (
-        <>
+        <div class={`alert p-4 ${alertType} d-flex justify-content-center`}>
             <span>Remaining: {budget - totalExpenses}</span>
-        </>
+        </div>
     )
 }
 

@@ -26,16 +26,15 @@ function AddExpenseForm() {
     }
 
     return (
-        <div style={{display: 'flex', justifyContent: 'space-between', width: '70%'}}>
-            <div>
-                <label style={{margin: '10px', fontSize: '17px'}}>Name</label>
-                <input style={{fontSize: '20px'}} value={name} onChange={e => setName(e.target.value)}/>
+        <div>
+            <div class="input-group">
+                <span class="input-group-text">Task and cost</span>
+                <input type="text" aria-label="First name" class="form-control" value={name} onChange={e => setName(e.target.value)}/>
+                <input type="text" aria-label="Last name" class="form-control"  value={cost} onChange={e => setCost(e.target.value)}/>
             </div>
-            <div>
-                <label style={{margin: '10px', fontSize: '17px'}}>Cost</label>
-                <input style={{fontSize: '20px'}} value={cost} onChange={e => setCost(e.target.value)}/>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-success btn-lg mt-3" onClick={onSubmit}>Save</button>
             </div>
-            <button onClick={onSubmit}>Save</button>
         </div>
     )
 }

@@ -4,41 +4,40 @@ import RemainingBudget from "./components/RemainingBudget";
 import SpentSoFar from "./components/SpentSoFar";
 import AddExpenseForm from "./components/AddExpenseForm";
 import { AppProvider } from "./context/AppContext";
-import "./styles/App.css";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div id="container">
-      <AppProvider>
-    
-        <h1>My budget planner</h1>
-
-        <div id="data">
-          <div className="data-elem">
-            <Budget/>
-          </div>
-          <div className="data-elem">
-            <RemainingBudget/>
-          </div>
-          <div className="data-elem">
-            <SpentSoFar/>
-          </div>
-        </div>  
-
-        <h2>Expenses</h2>
-
-        <div id="exp-list">
-          <ExpenseList/>
-        </div>
-
-        <h2>Add expense</h2>
-
-        <div id="exp-form">
-          <AddExpenseForm/>
-        </div> 
-             
-      </AppProvider>
-    </div>
+    <AppProvider>
+      <div className='container'>
+				<h1 className='mt-3'>My Budget Planner</h1>
+				<div className='row mt-3'>
+					<div className='col-sm'>
+						<Budget />
+					</div>
+					<div className='col-sm'>
+						<RemainingBudget />
+					</div>
+					<div className='col-sm'>
+						<SpentSoFar />
+					</div>
+				</div>
+				<h3 className='mt-3'>Expenses</h3>
+				<div className='row '>
+					<div className='col-sm'>
+						<ExpenseList />
+					</div>
+				</div>
+				<h3 className='mt-3'>Add Expense</h3>
+				<div className='row mt-3'>
+					<div className='col-sm'>
+						<AddExpenseForm />
+					</div>
+				</div>
+			</div>
+    </AppProvider>
+      
   );
 }
 

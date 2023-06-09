@@ -1,11 +1,10 @@
-
 function ViewBudget({budget, handleEditClick}) {
 
     return (
-        <div>
-            <span style={{marginRight: '10px'}}>Budget: {budget}</span>
-            <button style={{fontSize: '15px'}} onClick={handleEditClick}>Edit</button>
-        </div>
+        <>
+            <span>Budget: {budget}$</span>
+            <button  type='button' class='btn btn-primary' onClick={handleEditClick}>Edit</button>
+        </>
     )
 }
 

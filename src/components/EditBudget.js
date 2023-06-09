@@ -6,8 +6,12 @@ function EditBudget({budget, handleSaveClick}) {
 
     return (
         <>
-            <input value={value} onChange={e => setValue(e.target.value)}/>
-            <button onClick={() => handleSaveClick(value)}>Save</button>
+            <input required='required'
+				type='number'
+				class='form-control mr-3'
+				id='name' value={value} onChange={e => setValue(e.target.value)}/>
+            <button type='button'
+				class='btn btn-primary' onClick={() => handleSaveClick(value)}>Save</button>
         </>
     )
 }
