@@ -14,7 +14,7 @@ function ExpenseList() {
     }, [expenses])
 
     const handleChange = (e) => {
-        const searchResults = expenses.filter(filteredExpense => filteredExpense.name.toLowerCase().includes(e.target.value))
+        const searchResults = expenses.filter(filteredExpense => filteredExpense.name.toLowerCase().includes(e.target.value.toLowerCase()))
         
         setFilteredExpenses(searchResults)
     }
