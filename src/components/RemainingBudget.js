@@ -13,7 +13,7 @@ function RemainingBudget() {
 
     return (
         <div class={`alert p-4 ${alertType} d-flex justify-content-center`}>
-            <span>Remaining: {budget - totalExpenses}</span>
+            <span>Remaining: {budget - totalExpenses} $</span>
         </div>
     )
 }

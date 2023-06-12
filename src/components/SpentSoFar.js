@@ -11,7 +11,7 @@ function SpentSoFar() {
 
     return (
         <div class="alert alert-secondary p-4 d-flex justify-content-center">
-            <span>Spent so far: {totalExpenses}</span>
+            <span>Spent so far: {totalExpenses} $</span>
         </div>
     )
 }

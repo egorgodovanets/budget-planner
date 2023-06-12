@@ -17,7 +17,7 @@ function ExpenseItem({name, id, cost}) {
         <>
            <li class="list-group-item d-flex justify-content-between align-items-center">{name} 
                 <div class="d-flex align-items-center">
-                    <span class="badge bg-success rounded-pill">{cost}</span>
+                    <span class="badge bg-success rounded-pill">{cost} $</span>
                     <button type="button" class="btn-close m-2" aria-label="Close" onClick={handleDeleteExpense}></button>
                 </div>
             </li>

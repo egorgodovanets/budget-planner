@@ -2,7 +2,7 @@ function ViewBudget({budget, handleEditClick}) {
 
     return (
         <>
-            <span>Budget: {budget}$</span>
+            <span>Budget: {budget} $</span>
             <button  type='button' class='btn btn-primary' onClick={handleEditClick}>Edit</button>
         </>
     )
